@@ -11,8 +11,6 @@ on:
 jobs:
   docker-build:
     runs-on: ubuntu-latest
-    env:
-      OPENG2P_BOT_GITHUB_PAT: ${{ secrets.OPENG2P_BOT_GITHUB_PAT }}
     steps:
       - uses: actions/checkout@v2
 
