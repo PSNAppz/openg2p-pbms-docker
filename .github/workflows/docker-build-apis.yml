@@ -99,11 +99,13 @@ jobs:
           with open(service_file, "r", encoding="utf-8") as handle:
               lines = [line.strip() for line in handle if line.strip()]
 
-          if not lines or not lines[0].startswith("#!"):
-              print("Invalid file format: First line must start with #!IMAGE_ID", file=sys.stderr)
+          # Extract #! metadata lines (skip plain comments)
+          meta = [l for l in lines if l.startswith("#!")]
+          if not meta:
+              print("Invalid file format: No #!IMAGE_ID line found", file=sys.stderr)
               sys.exit(1)
 
-          image_id = lines[0].lstrip("#!").strip()
+          image_id = meta[0].lstrip("#!").strip()
 
           deps = []
 
