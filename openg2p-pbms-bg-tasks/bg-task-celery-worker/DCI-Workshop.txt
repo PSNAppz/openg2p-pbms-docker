@@ -1,6 +1,6 @@
 # bg-task-celery-worker.txt
-#!openg2p/openg2p-pbms-bg-task-celery-workers:dci-workshop
+#!psnappz/openg2p-pbms-bg-task-celery-workers:dci-workshop
 #!openg2p-pbms-bg-tasks/bg-task-celery-worker/Dockerfile
 #!.
 # adapters/dependencies (adjust refs/branches/tags as needed)
-git+https://github.com/openg2p/openg2p-pbms-bg-tasks-extensions@DCI-Workshop-May-2026#subdirectory=openg2p-bg-task-registry-adapters
+git+https://github.com/psnappz/openg2p-pbms-bg-tasks-extensions@DCI-Workshop-May-2026#subdirectory=openg2p-bg-task-registry-adapters
