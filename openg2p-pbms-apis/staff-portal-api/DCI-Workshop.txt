@@ -1,5 +1,5 @@
 # staff-portal-api.txt
-#!openg2p/openg2p-pbms-staff-portal-api:dci-workshop
+#!psnappz/openg2p-pbms-staff-portal-api:dci-workshop
 #!openg2p-pbms-apis/staff-portal-api/Dockerfile
 #!.
-git+https://github.com/openg2p/openg2p-pbms-bg-tasks-extensions@DCI-Workshop-May-2026#subdirectory=openg2p-bg-task-registry-adapters
+git+https://github.com/psnappz/openg2p-pbms-bg-tasks-extensions@DCI-Workshop-May-2026#subdirectory=openg2p-bg-task-registry-adapters
